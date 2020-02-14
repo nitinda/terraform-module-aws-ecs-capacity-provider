@@ -52,7 +52,10 @@ _The variables required in order for the module to be successfully called from t
 |**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
 |:----|:----|-----:|:---:|
 | **_tags_** | _Resource tags_ | _map(string)_ | **_Required_** |
-| **_name_** | _The name of the cluster_ | _string_ | **_Required_** |
+| **_name_** | _The name of the capacity provider_ | _string_ | **_Required_** |
+| **_auto\_scaling\_group\_arn_** | _The Amazon Resource Name (ARN) of the associated auto scaling group_ | _string_ | **_Required_** |
+| **_managed\_termination\_protection_** | _Enables or disables container-aware termination of instances_ | _string_ | **_Required_** |
+| **_managed\_scaling_** | _Nested argument defining the parameters of the auto scaling_ | _string_ | **_Required_** |
 
 
 ---
