@@ -17,17 +17,11 @@ _You can download the latest Terraform version from_ [_here_](https://www.terraf
 
 ---
 
-## _Features Branches_
+## _Features_
 
 _Below we are able to check the resources that are being created as part of this module call:_
 
-_From branch :_ _**terraform-11/master**_
-
 - _**ECS Capacity Provider (Terraform 11 supported code)**_
-
-_From branch :_ _**terraform-12/master**_
-
-- _**ECS Capacity Provider (Terraform 12 supported code)**_
 
 
 ---
@@ -55,7 +49,10 @@ module "ecs_capacity_provider" {
 
 _The variables required in order for the module to be successfully called from the deployment repository are the following:_
 
-- _**Details are in respective branch.**_
+|**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
+|:----|:----|-----:|:---:|
+| **_tags_** | _Resource tags_ | _map(string)_ | **_Required_** |
+| **_name_** | _The name of the cluster_ | _string_ | **_Required_** |
 
 
 ---
@@ -68,8 +65,8 @@ _The variables required in order for the module to be successfully called from t
 _This module has the following outputs:_
 
 
-- _**Details are in respective branch.**_
-
+* **_id_**
+* **_arn_**
 
 
 ### _Usage_
